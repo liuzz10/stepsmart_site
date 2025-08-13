@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StepSmart AI — GPS for completing web tasks</title>
+  <meta name="description" content="StepSmart AI is a conversational + visual guide that highlights the UI step by step so users complete tasks on complex websites." />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="StepSmart AI — GPS for the Web" />
+  <meta property="og:description" content="A conversational + visual chatbot that guides users through complex web tasks, step by step." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1020" />
+  <script>
+    // Simple email capture (replace with your backend, Netlify Forms, or Formspree)
+    function handleSignup(e){
+      e.preventDefault();
+      const f=e.target, email=f.email.value.trim(), msg=f.querySelector('[data-msg]');
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ msg.textContent='Please enter a valid email.'; msg.className='note error'; return;}
+      msg.textContent='Thanks! We’ll be in touch soon.'; msg.className='note success'; f.reset();
+    }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"StepSmart AI",
+    "url":"https://www.stepsmart.ai/",
+    "sameAs":[]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <header class="site-header">
+        <div class="topbar">Email us at <a href="mailto:stepsmartai@gmail.com">stepsmartai@gmail.com</a> 
+    if you’re interested in learning more about our product, 
+    or giving early feedback on our product research.</div>
+
+        <div class="container nav">
+            <a href="index.html" class="brand">
+            <img src="logo.png" alt="StepSmart AI logo" width="50" height="auto">
+            <span class="brand-name">StepSmart AI</span>
+            </a>
+            <nav class="navlinks">
+            <!-- <a href="#product">Product</a>
+            <a href="#how">How it works</a>
+            <a href="#benefits">Benefits</a> -->
+            <a href="index.html">Home</a>
+            <a href="team.html">Team</a>
+            <!-- <a class="btn btn-primary" href="#signup">Get early access</a> -->
+            </nav>
+        </div>
+    </header>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="product">
+      <div class="container hero-grid">
+        <div>
+            <p class="kicker">GPS for the Web</p>
+            <h1>Reduce support costs by guiding users through complex web tasks with an AI agent.</h1>
+            <p class="sub">
+            StepSmart is a conversational + visual AI agent chatbot that understands each user’s goal,
+            highlights the right UI elements, and walks them through every step—so tasks are completed without frustration
+            and without overloading your support team.
+            </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Contact us</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+        </div>
+        <div>
+          <div class="mock">
+            <div class="mock-topbar" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="mock-body">
+              <div class="stepcard">
+                <div class="stepnum">1</div>
+                <div>
+                  <div class="step-title">“Add my bank for payroll”</div>
+                  <div class="step-meta">Understands user goal</div>
+                </div>
+              </div>
+              <div class="stepcard">
+                <div class="stepnum">2</div>
+                <div>
+                  <div class="step-title">Highlight the right button</div>
+                  <div class="step-meta">On-screen visual guidance</div>
+                </div>
+              </div>
+              <div class="stepcard">
+                <div class="stepnum">3</div>
+                <div>
+                  <div class="step-title">Confirm each step</div>
+                  <div class="step-meta">Conversational checks & tips</div>
+                </div>
+              </div>
+              <div class="sparkline" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="kicker">Problem</div>
+        <h2>Websites are hard to navigate. Critical tasks get abandoned.</h2>
+        <p class="muted">
+          Older adults, first-time users, and even experienced users on complex portals struggle to find the right steps.
+          Businesses pay the price with frustrated users, increased bounce rates, and overloaded support teams.
+        </p>
+        <div class="pill-grid">
+          <span class="pill">High support costs</span>
+          <span class="pill">Lower task completion</span>
+          <span class="pill">User frustration</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution / Why different -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="kicker">Our solution</div>
+        <h2>Conversational + visual guidance that teaches users, not just automates.</h2>
+        <div class="feature-grid">
+          <div class="card">
+            <div class="kicker">Faster</div>
+            <h3>Real-time, intuitive guidance</h3>
+            <p>Users see what to click—right on the page—while the chatbot keeps them moving.</p>
+          </div>
+          <div class="card">
+            <div class="kicker">Empowering</div>
+            <h3>Helps users complete tasks themselves</h3>
+            <p>Learner-first design improves retention and reduces repeated tickets.</p>
+          </div>
+          <div class="card">
+            <div class="kicker">Generalizable</div>
+            <h3>Works across many sites</h3>
+            <p>Not tied to one platform; built to guide tasks on diverse portals and systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="kicker">How it works</div>
+        <h2>From goal → step-by-step completion</h2>
+        <div class="steps-grid">
+          <div class="step-item card">
+            <div class="badge">1</div>
+            <div>
+              <h3>Understand the goal</h3>
+              <p>User tells StepSmart what they’re trying to do (e.g., “Add my bank for payroll”).</p>
+            </div>
+          </div>
+          <div class="step-item card">
+            <div class="badge">2</div>
+            <div>
+              <h3>Highlight the UI</h3>
+              <p>We overlay on the page and visually call out what to click, type, or check.</p>
+            </div>
+          </div>
+          <div class="step-item card">
+            <div class="badge">3</div>
+            <div>
+              <h3>Guide to complete</h3>
+              <p>Conversational hints + confirmations reduce confusion and keep users progressing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes for business -->
+    <section class="section" id="roi">
+      <div class="container">
+        <div class="kicker">Outcomes</div>
+        <h2>Increase completion. Reduce support. Drive ROI.</h2>
+        <ul class="benefit-list">
+          <li>Boost task completion on complex portals</li>
+          <li>Lower support burden and ticket volume</li>
+          <li>Improve user satisfaction and retention</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-block" id="contact">
+      <div class="container cta-grid">
+        <div>
+            <p class="muted">
+            Email Joy at <a href="mailto:stepsmartai@gmail.com">stepsmartai@gmail.com</a>.  
+            We’re looking for pilot customers, partners, and collaborators.
+            </p>
+      </div>
+    </section>
+
+    <!-- Early access -->
+    <!-- <section class="cta-block" id="signup">
+      <div class="container cta-grid">
+        <div>
+          <h3>Get early access</h3>
+          <p class="muted">Email Joy at <a href="mailto:stepsmartai@gmail.com">stepsmartai@gmail.com</a> to be our pilot partners and collaborators.</p>
+        </div>
+        <form onsubmit="handleSignup(event)" class="signup-form">
+          <input type="email" name="email" placeholder="you@company.com" aria-label="Email" required />
+          <button class="btn btn-primary" type="submit">Request access</button>
+          <div class="note" data-msg></div>
+        </form>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footgrid">
+      <p class="tiny">© <span id="year"></span> StepSmart AI. All rights reserved.</p>
+    </div>
+    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
