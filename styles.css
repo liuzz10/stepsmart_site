@@ -272,5 +272,5 @@ input[type="email"] {
 }
 
 @media (max-width: 640px) {
-  .navlinks { display: none; }
+  .navlinks { display: flex; } /* or just delete the whole rule */
 }
