@@ -6,7 +6,7 @@
   <title>StepSmart AI — GPS for completing web tasks</title>
   <meta name="description" content="StepSmart AI is a conversational + visual guide that highlights the UI step by step so users complete tasks on complex websites." />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles_light.css">
   <meta property="og:title" content="StepSmart AI — GPS for the Web" />
   <meta property="og:description" content="A conversational + visual chatbot that guides users through complex web tasks, step by step." />
   <meta property="og:type" content="website" />
@@ -35,7 +35,7 @@
     <div class="topbar">If you run a complex portal, serve diverse users, or face high support costs, we’d love to talk: <a href="mailto:stepsmartai@gmail.com">stepsmartai@gmail.com</a></div>
     <div class="container nav">
         <a href="index.html" class="brand">
-        <img src="logo.png" alt="StepSmart AI logo" width="50" height="auto">
+        <img src="logo.png" alt="StepSmart AI logo" width="30" height="auto">
         <span class="brand-name">StepSmart AI</span>
         </a>
         <nav class="navlinks">
@@ -49,19 +49,18 @@
     </div>
 </header>
 
-  <main>
+  <main class="main-content">
     <!-- Hero -->
     <section class="hero" id="product">
       <div class="container hero-grid">
         <div>
-            <p class="kicker">GPS for the Web</p>
-            <h1>Guide users through complex tasks, cutting customer support $$$</h1>
+            <h1>Your Web Concierge</h1>
             <p class="sub">
-                We combine conversational AI with GUI-based visual cues to understand user goals, highlight the right elements, and guide them to complete web tasks without frustration.
+                AI assistance that makes tasks effortless, from showing the next action to completing it on the user's behalf, and helps cut support costs.
             </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact"> -> Talk to us <- </a>
-            <a class="btn btn-ghost" href="#how">See how it works</a>
+            <a class="btn btn-primary" href="#contact"> Talk to Us </a>
+            <!-- <a class="btn btn-ghost" href="#how">See how it works</a> -->
           </div>
         </div>
 
@@ -75,34 +74,34 @@
             <aside class="app-sidebar" aria-label="Workdy navigation">
                 <div class="app-logo">Workdy</div>
                 <nav>
-                <a class="nav-item" href="#">Home</a>
+                <!-- <a class="nav-item" href="#">Home</a> -->
                 <a class="nav-item active" href="#">Pay</a>
                 <a class="nav-item" href="#">Finances</a>
-                <a class="nav-item" href="#">Settings</a>
+                <!-- <a class="nav-item" href="#">Settings</a> -->
                 </nav>
             </aside>
 
-                <!-- Main area with highlight -->
-                <main class="app-main">
-                <div class="button-list">
-                    <!-- Confusing button above -->
-                    <button class="btn action-btn">Payroll</button>
+            <!-- Main area with highlight -->
+            <main class="app-main">
+            <div class="button-list">
+                <!-- Confusing button above -->
+                <button class="btn action-btn">Payroll</button>
 
-                    <!-- Highlighted button -->
-                    <div class="highlight-wrap">
-                    <button class="btn action-btn highlight-target" aria-describedby="hl-desc">
-                        Bank Account
-                    </button>
-                    <div id="hl-desc" class="sr-only">
-                        StepSmart highlights the correct action button.
-                    </div>
-                    <span class="highlight-ring" aria-hidden="true"></span>
-                    </div>
-
-                    <!-- Confusing button below -->
-                    <button class="btn action-btn">Bank Card Settings</button>
+                <!-- Highlighted button -->
+                <div class="highlight-wrap">
+                <button class="btn action-btn highlight-target" aria-describedby="hl-desc">
+                    Bank Account
+                </button>
+                <div id="hl-desc" class="sr-only">
+                    StepSmart highlights the correct action button.
                 </div>
-                </main>
+                <span class="highlight-ring" aria-hidden="true"></span>
+                </div>
+
+                <!-- Confusing button below -->
+                <button class="btn action-btn">Bank Card Settings</button>
+            </div>
+            </main>
 
 
             <!-- Chatbot panel -->
@@ -120,7 +119,7 @@
                 </div>
                 <div class="chat-input">
                 <input type="text" placeholder="What is this page about |" aria-label="Message StepSmart" />
-                <button class="btn">Send</button>
+                <button class="btn msg user">Send</button>
                 </div>
             </aside>
             </div>
@@ -144,9 +143,9 @@
           Ideal for banking portals, HR/payroll systems, government services, healthcare patient portals, and other complex web apps.
         </p>
         <div class="pill-grid">
-          <span class="pill">High support costs</span>
-          <span class="pill">Lower task completion</span>
-          <span class="pill">User frustration</span>
+          <span class="pill">💸High support costs</span>
+          <span class="pill">📉Lower task completion</span>
+          <span class="pill">😖User frustration</span>
         </div>
       </div>
     </section>
@@ -157,27 +156,29 @@
         <div class="kicker">Our solution</div>
         <h2>Conversational + visual guidance that teaches users, not just automates.</h2>
         <div class="feature-grid">
-          <div class="card">
+            <div class="card">
             <div class="kicker">Faster</div>
-            <h3>Real-time, intuitive guidance</h3>
-            <p>Users see what to click—right on the page—while the chatbot keeps them moving.</p>
-          </div>
-          <div class="card">
+            <h3>Real-time, visualized guidance</h3>
+            <p>Show the next step clearly, by highlighting the right button or doing it for the user.</p>
+            </div>
+
+            <div class="card">
             <div class="kicker">Empowering</div>
-            <h3>Helps users complete tasks themselves</h3>
-            <p>Learner-first design improves retention and reduces repeated tickets.</p>
-          </div>
-          <div class="card">
-            <div class="kicker">Generalizable</div>
-            <h3>Works across many sites</h3>
-            <p>Not tied to one platform; built to guide tasks on diverse portals and systems.</p>
-          </div>
+            <h3>Helps users finish tasks</h3>
+            <p>Clear steps help people remember how to do things and avoid asking for help again.</p>
+            </div>
+
+            <div class="card">
+            <div class="kicker">Easy</div>
+            <h3>Quick to add</h3>
+            <p>Works with just one line of code, easy for your engineering team</p>
+            </div>
         </div>
       </div>
     </section>
 
     <!-- How it works -->
-    <section class="section" id="how">
+    <!-- <section class="section" id="how">
       <div class="container">
         <div class="kicker">How it works</div>
         <h2>From goal → step-by-step completion</h2>
@@ -205,20 +206,30 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Outcomes for business -->
-    <section class="section" id="roi">
-      <div class="container">
+    <section class="section outcomes" id="roi">
+    <div class="container">
         <div class="kicker">Outcomes</div>
         <h2>Increase completion. Reduce support. Drive ROI.</h2>
-        <ul class="benefit-list">
-          <li>Boost task completion on complex portals</li>
-          <li>Lower support burden and ticket volume</li>
-          <li>Improve user satisfaction and retention</li>
-        </ul>
-      </div>
+        <div class="benefits-grid">
+        <div class="benefit-card">
+            <span class="benefit-icon">⚡</span>
+            <p>Boost task completion on complex portals</p>
+        </div>
+        <div class="benefit-card">
+            <span class="benefit-icon">📉</span>
+            <p>Lower support burden and ticket volume</p>
+        </div>
+        <div class="benefit-card">
+            <span class="benefit-icon">💛</span>
+            <p>Improve user satisfaction and retention</p>
+        </div>
+        </div>
+    </div>
     </section>
+
 
     <!-- CTA -->
     <section class="cta-block" id="contact">
@@ -227,9 +238,24 @@
           <h3>Interested?</h3>
           <p class="muted">
             We’re looking for pilot customers, partners, and early feedback.
-            Email Joy at <a href="mailto:stepsmartai@gmail.com">stepsmartai@gmail.com</a> to explore how StepSmart AI can work for your users.</p>
+            Email Joy at <a href="mailto:stepsmartai@gmail.com">stepsmartai@gmail.com</a> or fill in the form to explore how StepSmart AI can work for your users.</p>
         </div>
       </div>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html" class="signup-form">
+            <!-- Required hidden input so Netlify knows the form name -->
+            <input type="hidden" name="form-name" value="contact">
+            <!-- Honeypot field (hidden from humans) -->
+            <p style="display:none;">
+                <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="4" placeholder="Tell us about your use case…" required></textarea>
+            <!-- (Optional) reCAPTCHA v2 widget -->
+            <!-- <div data-netlify-recaptcha="true"></div> -->
+
+            <button class="btn btn-primary" type="submit">Send</button>
+        </form>
     </section>
 
     <!-- Early access -->
